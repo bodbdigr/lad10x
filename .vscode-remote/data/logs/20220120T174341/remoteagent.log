@@ -1,0 +1,27 @@
+[2022-01-20 17:43:42.034] [remoteagent] [info] Extension host agent started.
+[2022-01-20 17:44:00.238] [remoteagent] [info] [::ffff:172.17.0.1][52af154c][ManagementConnection] New connection established.
+[2022-01-20 17:44:00.286] [remoteagent] [info] [::ffff:172.17.0.1][6f635b79][ExtensionHostConnection] New connection established.
+[2022-01-20 17:44:00.317] [remoteagent] [info] [::ffff:172.17.0.1][6f635b79][ExtensionHostConnection] <41> Launched Extension Host Process.
+[2022-01-20 17:44:24.621] [remoteagent] [info] [::ffff:172.17.0.1][52af154c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2022-01-20 17:44:24.663] [remoteagent] [info] [::ffff:172.17.0.1][6f635b79][ExtensionHostConnection] <41> Extension Host Process exited with code: 0, signal: null.
+[2022-01-20 17:44:25.364] [remoteagent] [info] [::ffff:172.17.0.1][d09aeeaf][ManagementConnection] New connection established.
+[2022-01-20 17:44:25.818] [remoteagent] [info] [::ffff:172.17.0.1][c9b59194][ExtensionHostConnection] New connection established.
+[2022-01-20 17:44:25.832] [remoteagent] [info] [::ffff:172.17.0.1][c9b59194][ExtensionHostConnection] <61> Launched Extension Host Process.
+[2022-01-20 17:46:21.214] [remoteagent] [info] [::ffff:172.17.0.1][2e50fcd4][ManagementConnection] New connection established.
+[2022-01-20 17:46:21.826] [remoteagent] [info] [::ffff:172.17.0.1][429f025c][ExtensionHostConnection] New connection established.
+[2022-01-20 17:46:21.843] [remoteagent] [info] [::ffff:172.17.0.1][429f025c][ExtensionHostConnection] <139> Launched Extension Host Process.
+[2022-01-20 17:46:21.888] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 11
+[2022-01-20 17:46:22.296] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 12
+[2022-01-20 17:46:22.357] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 13
+[2022-01-20 17:46:22.623] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 14
+[2022-01-20 17:46:22.840] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 15
+[2022-01-20 17:47:09.684] [remoteagent] [info] [::ffff:172.17.0.1][d09aeeaf][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2022-01-20 17:47:09.789] [remoteagent] [info] [::ffff:172.17.0.1][c9b59194][ExtensionHostConnection] <61> Extension Host Process exited with code: 0, signal: null.
+[2022-01-20 17:47:36.992] [remoteagent] [info] [::ffff:172.17.0.1][d3588434][ManagementConnection] New connection established.
+[2022-01-20 17:47:37.780] [remoteagent] [info] [::ffff:172.17.0.1][58d5c167][ExtensionHostConnection] New connection established.
+[2022-01-20 17:47:37.827] [remoteagent] [info] [::ffff:172.17.0.1][58d5c167][ExtensionHostConnection] <261> Launched Extension Host Process.
+[2022-01-20 17:47:50.895] [remoteagent] [info] [::ffff:172.17.0.1][d3588434][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2022-01-20 17:47:50.977] [remoteagent] [info] [::ffff:172.17.0.1][58d5c167][ExtensionHostConnection] <261> Extension Host Process exited with code: 0, signal: null.
+[2022-01-20 17:47:51.210] [remoteagent] [info] [::ffff:172.17.0.1][77f0b094][ManagementConnection] New connection established.
+[2022-01-20 17:47:51.718] [remoteagent] [info] [::ffff:172.17.0.1][f3779bea][ExtensionHostConnection] New connection established.
+[2022-01-20 17:47:51.728] [remoteagent] [info] [::ffff:172.17.0.1][f3779bea][ExtensionHostConnection] <274> Launched Extension Host Process.

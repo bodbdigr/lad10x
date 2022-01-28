@@ -1,0 +1,18 @@
+[2022-01-26 17:49:50.439] [exthost] [info] Extension host with pid 139 started
+[2022-01-26 17:49:50.441] [exthost] [error] Error: EEXIST: file already exists, open '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95/vscode.lock'
+[2022-01-26 17:49:50.447] [exthost] [info] Lock '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95/vscode.lock': Could not acquire lock, checking if the file is stale.
+[2022-01-26 17:49:50.465] [exthost] [info] Lock '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95/vscode.lock': The lock does not look stale, elapsed: 34 ms, giving up.
+[2022-01-26 17:49:50.473] [exthost] [error] Error: EEXIST: file already exists, open '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95-1/vscode.lock'
+[2022-01-26 17:49:50.482] [exthost] [info] Lock '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95-1/vscode.lock': Could not acquire lock, checking if the file is stale.
+[2022-01-26 17:49:50.495] [exthost] [info] Lock '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95-1/vscode.lock': The lock looks stale, waiting for 2s.
+[2022-01-26 17:49:51.595] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+[2022-01-26 17:49:51.870] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-26 17:49:51.925] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-26 17:49:52.501] [exthost] [info] Lock '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95-1/vscode.lock': The lock looks stale even after waiting for 2s.
+[2022-01-26 17:49:52.503] [exthost] [info] Lock '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95-1/vscode.lock': Deleting a stale lock.
+[2022-01-26 17:49:52.530] [exthost] [info] Lock '/home/workspace/.vscode-remote/data/User/workspaceStorage/-706e5c95-1/vscode.lock': Lock acquired.
+[2022-01-26 17:49:53.657] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-26 17:49:53.875] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-26 17:49:54.149] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-26 17:49:54.193] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-26 17:49:54.210] [exthost] [info] Eager extensions activated
