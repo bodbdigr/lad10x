@@ -4,6 +4,13 @@ import { transform, transformFromAst } from '@babel/standalone'
 import babelPluginSyntaxJsx from '@babel/plugin-syntax-jsx'
 import { declare } from '@babel/helper-plugin-utils'  
 
+import { Header } from "./modules/header"
+
+const importsMap = {
+  'React': React,
+  'Header':  Header,
+}
+
 const doWalk = declare(api => {
   api.assertVersion(7)
   return {
@@ -27,9 +34,35 @@ const doWalk = declare(api => {
   }
 })
 
+const imports = []
+
+const walkImport = declare(api => {
+  api.assertVersion(7)
+  return {
+    visitor: {
+      ImportDeclaration: {
+        enter(path) {
+          const importDeclaration = {
+            path: path.node.source.value,
+            name: path.node.specifiers[0].local.name,
+          };
+          imports.push(importDeclaration);
+          path.remove();
+        }
+      },
+      ExportDeclaration: {
+        enter(path) {
+          // replace export with return here ->
+          // path.replaceWith()
+        }
+      }
+    }
+  }
+})
+
 function App() {
-  const code = `import * as React from "react"
-import { Header } from "./modules/header.js";
+  const code = `import React from "react"
+import Header from "./modules/header.js";
 
 export const App = ({ param }) => {
   return (
@@ -43,8 +76,8 @@ export const App = ({ param }) => {
 `;
 
   const { ast } = transform(code, {
-    // presets: ["es2015", "react"],
-    plugins: [babelPluginSyntaxJsx, doWalk],
+    presets: ["es2015", "react"],
+    plugins: [babelPluginSyntaxJsx, doWalk, walkImport],
     ast: true
   }
 )
@@ -55,8 +88,15 @@ export const App = ({ param }) => {
 
   console.log('after', codeAfter.code)
 
-  // const res = new Function(codeAfter.code)
-  // console.log(res())
+  const params = imports.map(i => i.name)
+  const fullParams = [...params, codeAfter.code];
+  const values = imports.map(i => importsMap[i.name]);
+
+  console.log(fullParams, values)
+
+  const res = new Function(...fullParams).apply(values)
+
+  console.log('applied', res)
 
   return <>text</>
 }
